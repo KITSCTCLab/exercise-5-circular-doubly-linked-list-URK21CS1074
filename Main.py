@@ -1,3 +1,4 @@
+
 class Node:
     def __init__(self, data=None):
         self.data = data
@@ -6,7 +7,7 @@ class Node:
 
 
 class DoublyCircularLinkedList:
-    def _init_(self):
+    def __init__(self):
         self.head = None
         self.count = 0
         self.end = None
@@ -19,7 +20,7 @@ class DoublyCircularLinkedList:
             self.head.previous=new_node
             new_node.next = self.head
        else:
-            self.head  = new_node
+            self.head = new_node
        self.end = new_node 
        self.count += 1 
        return True
@@ -133,3 +134,4 @@ for i in range(len(operations)):
         result.append(obj.delete_at_index(data[i]))
 
 print(result)
+
